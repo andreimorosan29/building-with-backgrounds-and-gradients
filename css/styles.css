@@ -1,37 +1,39 @@
+body {
+    font-family: "Lato", sans-serif; 
+}
+
 .main-content {
     position:relative;
     max-width: 1200px;
+    width: 100%;
     height: 500px;
     background-image:url("../assets/header.jpg");
     margin: 0 auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
-     background-position: center; 
-}
-
-.main-content > .header > h1, h2, h3 {
-    color: white;
-    text-align: center;
+    background-position: center; 
 }
 
 .main-content > .header {
+    color: white;
+    text-align: center;
     width: 60%;
     position: absolute;               
     top: 30%;
-    left: 20%;             
+    left: 20%;      
 }
 
 .main-content > .topbar {
     display:flex;
     justify-content:center;
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
     padding-top:30px;
     color: white;
-    
 }
 
 .main-content > .topbar > * {
+    width: 12%;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -50,11 +52,13 @@
 }
 
 .main-content > .topbar> .topbar-button:first-child {
+  font-size: 24px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-right: 1.5px solid rgb(53, 53, 53);
   text-shadow: 0px -2px 0px #4a4a4a, 0px 2px 0px #505050;
 }
+
 
 .main-content > .topbar > .topbar-search {
     color: white;
@@ -72,6 +76,7 @@
 }
 
 .main-content > .topbar > .topbar-search > input {
+    width: 100%;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -87,9 +92,73 @@
 
 }
 
+.main-content > .topbar > .topbar-search > input:focus {
+    color: black;
+    font-size: 14px;
+    background-image: none;
+    background-color: white;
+}
+
 .main-content > .topbar > .topbar-search > input::placeholder { 
     color: white;
     opacity: 1;
     padding-left: 10px;
+    font-size: 12px;
+}
+
+.footer-grid {
+    display: grid;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    grid-gap: 3px;
+    padding-top: 3px;
+}
+
+.footer-element {
+    padding-top: 20px;    
+}
+
+.footer-element > div {
+    text-align: center;
+}
+
+.footer-element:first-child{
+    background-image:
+    linear-gradient(
+      rgb(138, 209, 221), #2634b4
+    );}
+.footer-element:nth-child(2) {
+    background-image:
+    linear-gradient(
+      to bottom right, 
+      #f06d06, red
+    );
+}
+
+.footer-element:nth-child(3) {
+    background-image:
+    radial-gradient(
+      circle at top right,
+      #b91a3d,
+      rgb(46, 182, 192)
+    );
+}
+
+.footer-element:last-child {
+    background-image:
+    linear-gradient(
+      190deg, 
+      rgb(35, 241, 162), #c95fae,rgb(252, 235, 1)
+    );
+}
+
+.footer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 5px 10px 5px;
     font-size: 12px;
 }
