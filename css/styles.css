@@ -1,0 +1,226 @@
+body {
+    font-family: "Lato", sans-serif; 
+}
+
+.main-content {
+    position:relative;
+    width: 75%;
+    height: 600px;
+    background-image:url("../assets/header.jpg");
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.main-content > .header {
+    color: white;
+    text-align: center;
+    width: 60%;
+    position: absolute;               
+    top: 30%;
+    left: 20%;      
+}
+
+.main-content > .header > h1,h2,h3 {
+    font-weight: lighter;
+}
+
+.main-content > .header > h1 {
+    font-size: 45px;
+}
+
+.main-content > .topbar {
+    display:flex;
+    justify-content:center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top:30px;
+    color: white;
+}
+
+.main-content > .topbar > * {
+    width: 12%;
+    color: white;
+    font-weight: bold;
+    background-color: gray;
+    background-image:
+    linear-gradient(
+        #8a8a8a, 
+        #707070 50%,#918e8e 50%, 
+        #787878);
+    padding: 8px;
+    border:none;
+    border-right: 1.5px solid rgb(53, 53, 53);
+    text-shadow: 0 -2px 0 #4a4a4a, 0 2px 0 #505050;
+    box-shadow: 0 5px 5px 0 black;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.main-content > .topbar > *:hover {
+    background-image:
+    linear-gradient(
+        #616161, 
+        #444343 50%,#363535 50%, 
+        #313131);
+}
+.main-content > .topbar > *:last-child {
+    cursor: default;
+}
+
+.main-content > .topbar> .topbar-button:first-child {
+  font-size: 24px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: 1.5px solid rgb(53, 53, 53);
+  text-shadow: 0px -2px 0px #4a4a4a, 0px 2px 0px #505050;
+}
+
+
+.main-content > .topbar > .topbar-search {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: gray;
+    background-image:
+    linear-gradient(
+        #8a8a8a, 
+        #707070 50%,#5e5e5e 50%, 
+        #787878);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border:none;
+}
+
+.main-content > .topbar > .topbar-search > input {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: gray;
+    background-image:
+    linear-gradient(
+        #8a8a8a, 
+        #707070 50%,#5e5e5e 50%, 
+        #787878);
+    border-radius: 16px;
+    border: 1px solid #4c4c4c;
+    box-shadow: 0px -1px 0px #3b3b3b, 0px 1px 0px #898989;
+
+}
+
+.main-content > .topbar > .topbar-search > input:focus {
+    color: black;
+    font-size: 14px;
+    background-image: none;
+    background-color: white;
+}
+
+.main-content > .topbar > .topbar-search > input::placeholder { 
+    color: white;
+    opacity: 1;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.footer-grid {
+    display: grid;
+    width: 75%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    grid-gap: 3px;
+    padding-top: 3px;
+}
+
+.footer-element {
+    padding-top: 20px;    
+}
+
+.footer-element > div {
+    text-align: center;
+}
+
+.footer-element:first-child{
+    background-image:
+    linear-gradient(
+      rgb(138, 209, 221), #2634b4
+    );}
+.footer-element:nth-child(2) {
+    background-image:
+    linear-gradient(
+      to bottom right, 
+      #f06d06, red
+    );
+}
+
+.footer-element:nth-child(3) {
+    background-image:
+    radial-gradient(
+      circle at top right,
+      #b91a3d,
+      rgb(46, 182, 192)
+    );
+}
+
+.footer-element:last-child {
+    background-image:
+    linear-gradient(
+      190deg, 
+      rgb(35, 241, 162), #c95fae,rgb(252, 235, 1)
+    );
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 5px 10px 5px;
+    color: rgb(158, 156, 156);
+    font-size: 11px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(47, 141, 204);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer > div:first-child {
+    padding-top: 20px;
+}
+
+.footer li {
+    padding-bottom: 0;
+    display: inline;
+    line-height: 20px;
+    padding-right: 5px;
+    border-right: solid 1px rgb(158, 156, 156);;
+    line-height: 30px;
+}
+
+.footer > div > ul > li > img {
+    width: 30px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.footer li:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+.copyright {
+    display: block;
+    color: rgb(158, 156, 156);
+}
+
+.copyright > span:first-child {
+    padding-right: 5px;
+    border-right: solid 1px rgb(158, 156, 156);;
+}
